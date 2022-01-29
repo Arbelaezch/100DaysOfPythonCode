@@ -7,6 +7,11 @@ print("Welcome to Rock, Paper, Scissors!")
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n"))
 random_int = random.randint(0,2)
 
+if choice < 0 or choice > 2:
+    print('You dun goofed. Try typing either "0", "1", or "2".')
+    exit()
+
+
 hand = ["""
     _______
 ---'   ____)
