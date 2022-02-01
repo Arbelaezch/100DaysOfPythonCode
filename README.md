@@ -10,4 +10,6 @@ Day 4: [Rock, Paper, Scissors](/Days1-15:Beginner/day4.py)\
 Day 5: [Random Password Generator](/Days1-15:Beginner/day5.py)\
 Day 6: While Loops and Functions at [Reeborg's World](https://reeborg.ca/index_en.html)\
 Day 7: [Hangman](/Days1-15:Beginner/day7.py)\
-Day 8: [Caesar Cipher](/Days1-15:Beginner/day8.py)
+Day 8: [Caesar Cipher](/Days1-15:Beginner/day8.py)\
+Day 9: [Secret Auction Program](/Days1-15:Beginner/day9.py)\
+Day 10: [Calculator](/Days1-15:Beginner/day10.py)
