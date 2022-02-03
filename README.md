@@ -15,5 +15,5 @@ Day 9: [Secret Auction Program](/Days1-15:Beginner/day9.py)\
 Day 10: [Calculator](/Days1-15:Beginner/day10.py)\
 Day 11 Capstone Project: [Blackjack](/Days1-15:Beginner/day11.py)\
 Day 12: [Number Guessing Game](/Days1-15:Beginner/day12.py)\
-Day 13: Debugging Practice
+Day 13: Debugging Practice\
 Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)](/Days1-15:Beginner/day14/day14.py)
