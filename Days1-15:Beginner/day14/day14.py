@@ -83,10 +83,8 @@ while correct == 1:
 		combatantB = select_combatant()
 
 	print_combatant(combatantA, 1)
-	print(combatantA["follower_count"])
 	vs_art()
 	print_combatant(combatantB, 2)
-	print(combatantB["follower_count"])
 	
 	answer = winning_combatant(combatantA, combatantB)
 
