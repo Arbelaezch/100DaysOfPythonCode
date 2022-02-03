@@ -1,4 +1,5 @@
 # Rock Paper Scissors
+# Randomization and Python Lists
 
 import random
 

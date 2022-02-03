@@ -1,4 +1,5 @@
 # Calculator
+# Functions with outputs
 '''
 For a better Implementation use Dictionaries where the key is the symbol: +,-,*,/ and the value is the 
 word add, sub, mult, div. You can use this value to call the appropriate function. This removes the need

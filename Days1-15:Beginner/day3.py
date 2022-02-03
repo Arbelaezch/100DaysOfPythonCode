@@ -1,4 +1,6 @@
 # Choose Your Own Adventure Game
+# Conditionals and Logical operators
+
 print('''
 *******************************************************************************
           |                   |                  |                     |

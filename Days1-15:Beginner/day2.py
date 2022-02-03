@@ -1,4 +1,5 @@
 # Tip Calculator program
+# Data Types and String manipulation
 
 print("Welcome to the tip calculator.")
 total = float(input("What was the total bill?\n$"))

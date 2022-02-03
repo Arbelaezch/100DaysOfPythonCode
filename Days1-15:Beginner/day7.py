@@ -1,4 +1,5 @@
 # Hangman
+# Functions
 
 from gettext import find
 import os

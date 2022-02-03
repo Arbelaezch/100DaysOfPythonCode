@@ -13,4 +13,4 @@ Day 7: [Hangman](/Days1-15:Beginner/day7.py)\
 Day 8: [Caesar Cipher](/Days1-15:Beginner/day8.py)\
 Day 9: [Secret Auction Program](/Days1-15:Beginner/day9.py)\
 Day 10: [Calculator](/Days1-15:Beginner/day10.py)\
-Day 11: Capstone Project: [Blackjack Program](/Days1-15:Beginner/day11.py)
+Day 11 Capstone Project: [Blackjack](/Days1-15:Beginner/day11.py)

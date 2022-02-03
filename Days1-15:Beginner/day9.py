@@ -1,7 +1,7 @@
 # Secret/Silent Auction Program
 # Works as though each bidder was using the same computer/program to privately
 # input their bid.
-# Utilizes Python Dictionaries
+# Python Dictionaries and nesting
 
 import random
 import os
