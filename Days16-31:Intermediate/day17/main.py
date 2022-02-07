@@ -1,4 +1,8 @@
 import os
+from re import T
+from question_model import Question
+from data import question_data
+from quiz_brain import QuizBrain
 
 def screen_clear():
 	'''Clears terminal screen'''
@@ -7,19 +11,20 @@ def screen_clear():
 	else:
 		# for windows platfrom
 		_ = os.system('cls')
+  
 
-class User:
-	
-	def __init__(self, user_id, username):
-		#called every time a new User object is created.
-		self.id = user_id
-		self.username = username
-		pass
-	
-
+question_bank = []
 screen_clear()
+i = 0
 
-user_1 = User("001", "Jack")
+for q in question_data:
+	question = Question(question_data[i]["text"], question_data[i]["answer"])
+	question_bank.append(question)
+	i += 1
 
+quiz = QuizBrain(question_bank)
+while quiz.still_has_questions():
+	quiz.next_question()
 
-print(user_1.username)
+print(f"You've completed the quiz.")
+print(f"Your final score was: {quiz.score}/{quiz.question_number}.")
