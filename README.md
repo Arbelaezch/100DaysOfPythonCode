@@ -3,6 +3,8 @@ Completed projects from the Udemy course [100 Days of Code: The Complete Python 
 There are multiple other slightly smaller projects each day that are not included in this repo. These other projects include things like a BMI calculator and glorious old FizzBuzz.
 
 ## Projects Completed So Far
+
+### Beginner Projects
 Day 1: [Band Name Generator](/Days1-15:Beginner/day1.py)\
 Day 2: [Group Tip Calculator](/Days1-15:Beginner/day2.py)\
 Day 3: [Choose Your Own Adventure Game](/Days1-15:Beginner/day3.py)\
@@ -16,4 +18,9 @@ Day 10: [Calculator](/Days1-15:Beginner/day10.py)\
 Day 11 Capstone Project: [Blackjack](/Days1-15:Beginner/day11.py)\
 Day 12: [Number Guessing Game](/Days1-15:Beginner/day12.py)\
 Day 13: Debugging Practice\
-Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)](/Days1-15:Beginner/day14/day14.py)
+Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)](/Days1-15:Beginner/day14/day14.py)/
+Day 15: [Virtual Coffee Machine](/Days1-15:Beginner/day15/day15.py)\
+
+### Intermediate Projects
+Day 16: [OOP Coffee Machine](/Days16-31:Intermediate/day16/main.py)\
+Day 17: [Quiz](/Days16-31:Intermediate/day17/main.py)
