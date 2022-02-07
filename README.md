@@ -18,8 +18,8 @@ Day 10: [Calculator](/Days1-15:Beginner/day10.py)\
 Day 11 Capstone Project: [Blackjack](/Days1-15:Beginner/day11.py)\
 Day 12: [Number Guessing Game](/Days1-15:Beginner/day12.py)\
 Day 13: Debugging Practice\
-Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)](/Days1-15:Beginner/day14/day14.py)/
-Day 15: [Virtual Coffee Machine](/Days1-15:Beginner/day15/day15.py)\
+Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)](/Days1-15:Beginner/day14/day14.py)\
+Day 15: [Virtual Coffee Machine](/Days1-15:Beginner/day15/day15.py)
 
 ### Intermediate Projects
 Day 16: [OOP Coffee Machine](/Days16-31:Intermediate/day16/main.py)\
