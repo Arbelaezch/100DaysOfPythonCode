@@ -23,4 +23,7 @@ Day 15: [Virtual Coffee Machine](/Days1-15:Beginner/day15/day15.py)
 
 ### Intermediate Projects
 Day 16: [OOP Coffee Machine](/Days16-31:Intermediate/day16/main.py)\
-Day 17: [OOP Quiz](/Days16-31:Intermediate/day17/main.py)
+Day 17: [OOP Quiz](/Days16-31:Intermediate/day17/main.py)\
+Day 18: [Turtle Graphical User Interface](/Days16-31:Intermediate/day18/main.py)
+
+
