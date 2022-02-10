@@ -25,7 +25,9 @@ Day 15: [Virtual Coffee Machine](/Days1-15:Beginner/day15/day15.py)
 Day 16: [OOP Coffee Machine](/Days16-31:Intermediate/day16/main.py)\
 Day 17: [OOP Quiz](/Days16-31:Intermediate/day17/main.py)\
 Day 18: [Turtle Graphical User Interface Hirst Painting](/Days16-31:Intermediate/day18/main.py)\
-Day 19: [Turtle GUI Race](/Days16-31:Intermediate/day19/main.py)
+Day 19: [Turtle GUI Race](/Days16-31:Intermediate/day19/main.py)\
+Day 20&21: [Snake Game](/Days16-31:Intermediate/day20/main.py)
+
 
 
 
