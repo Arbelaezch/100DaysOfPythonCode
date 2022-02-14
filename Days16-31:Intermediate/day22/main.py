@@ -8,23 +8,6 @@ from scoreboard import Scoreboard
 from player import Player
 
 
-
-# classes for each score
-# a class for each player bar
-# a class for the ball
-
-
-def collision_with_wall():
-	pass
-
-# def boundary_hit():
-# 	if (ball.ycor() >= 295) or (ball.ycor() <= -290):
-# 		return ball.bounce(ball.heading())
-
-
-# ball.xcor() >= 290) or (ball.xcor() < -295) or 
-
-
 XSIZE = 800
 YSIZE = 600
 
@@ -40,8 +23,6 @@ p2 = Player((350, 0))
 score1 = Scoreboard((-100, 250))
 score2 = Scoreboard((100, 250))
 
-heading = random.randint(0, 359)
-ball.setheading(heading)
 
 screen.tracer(1)
 screen.update()
