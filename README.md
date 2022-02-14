@@ -29,6 +29,7 @@ Day 19: [Turtle GUI Race](/Days16-31:Intermediate/day19/main.py)\
 Days 20&21: [Snake Game](/Days16-31:Intermediate/day20)\
 Day 22: [Pong](/Days16-31:Intermediate/day22)\
 Day 23: [Frogger](/Days16-31:Intermediate/day23)
+Day 24: [](/Days16-31:Intermediate/day24)
 
 
 

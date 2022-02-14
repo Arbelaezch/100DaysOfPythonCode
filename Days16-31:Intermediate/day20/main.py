@@ -1,19 +1,9 @@
-from tracemalloc import start
-from turtle import Turtle, Screen, color, shape
+from turtle import Turtle, Screen
 import random
 import time
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
-
-
-def boundary_hit():
-	if (snake.head.xcor() >= 290) or (snake.head.xcor() < -295) or (snake.head.ycor() >= 295) or (snake.head.ycor() <= -290):
-		scoreboard.game_over()
-		return False
-	else:
-		return True
-
 
 
 XSIZE = 600
@@ -50,15 +40,16 @@ while is_game_on:
 		snake.extend()
 
 	# Detect collision with wall.
-	is_game_on = boundary_hit()
+	if (snake.head.xcor() >= 290) or (snake.head.xcor() < -295) or (snake.head.ycor() >= 295) or (snake.head.ycor() <= -290):
+		scoreboard.reset()
+		snake.reset()
 
 	# Detect collision with tail.
 	for segment in snake.segments:
 		if segment == snake.head:
 			pass
 		elif snake.head.distance(segment) < 10:
-			is_game_on = False
-			scoreboard.game_over()
+			scoreboard.reset()
 
 
 screen.exitonclick()
