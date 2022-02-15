@@ -10,12 +10,12 @@ Day 2: [Group Tip Calculator](/Days1-15:Beginner/day2.py)\
 Day 3: [Choose Your Own Adventure Game](/Days1-15:Beginner/day3.py)\
 Day 4: [Rock, Paper, Scissors](/Days1-15:Beginner/day4.py)\
 Day 5: [Random Password Generator](/Days1-15:Beginner/day5.py)\
-Day 6: While Loops and Functions at [Reeborg's World](https://reeborg.ca/index_en.html)\
+Day 6: [Reeborg's World practice](https://reeborg.ca/index_en.html)\
 Day 7: [Hangman](/Days1-15:Beginner/day7.py)\
 Day 8: [Caesar Cipher](/Days1-15:Beginner/day8.py)\
 Day 9: [Secret Auction Program](/Days1-15:Beginner/day9.py)\
 Day 10: [Calculator](/Days1-15:Beginner/day10.py)\
-Day 11 Capstone Project: [Blackjack](/Days1-15:Beginner/day11.py)\
+Day 11: [Blackjack](/Days1-15:Beginner/day11.py)\
 Day 12: [Number Guessing Game](/Days1-15:Beginner/day12.py)\
 Day 13: Debugging Practice\
 Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)](/Days1-15:Beginner/day14/day14.py)\
@@ -29,7 +29,9 @@ Day 19: [Turtle GUI Race](/Days16-31:Intermediate/day19/main.py)\
 Days 20&21: [Snake Game](/Days16-31:Intermediate/day20)\
 Day 22: [Pong](/Days16-31:Intermediate/day22)\
 Day 23: [Frogger](/Days16-31:Intermediate/day23)\
-Day 24: [Mail Merge](/Days16-31:Intermediate/day24) and file I/O
+Day 24: [Mail Merge](/Days16-31:Intermediate/day24) and file I/O\
+Day 25: [U.S. States Memory Game](/Days16-31:Intermediate/day25)
+
 
 
 
