@@ -29,8 +29,10 @@ Day 19: [Turtle GUI Race](/Days16-31:Intermediate/day19/main.py)\
 Days 20&21: [Snake Game](/Days16-31:Intermediate/day20)\
 Day 22: [Pong](/Days16-31:Intermediate/day22)\
 Day 23: [Frogger](/Days16-31:Intermediate/day23)\
-Day 24: [Mail Merge](/Days16-31:Intermediate/day24) and file I/O\
-Day 25: [U.S. States Memory Game](/Days16-31:Intermediate/day25)
+Day 24: [Mail Merge](/Days16-31:Intermediate/day24) - file I/O\
+Day 25: [U.S. States Game](/Days16-31:Intermediate/day25) - Working with .csv and the Pandas library\
+Day 26: [NATO Alphabet](/Days16-31:Intermediate/day26) - List and Dictionary comprehension
+
 
 
 
