@@ -31,10 +31,5 @@ Day 22: [Pong](/Days16-31:Intermediate/day22)\
 Day 23: [Frogger](/Days16-31:Intermediate/day23)\
 Day 24: [Mail Merge](/Days16-31:Intermediate/day24) - file I/O\
 Day 25: [U.S. States Game](/Days16-31:Intermediate/day25) - Working with .csv and the Pandas library\
-Day 26: [NATO Alphabet](/Days16-31:Intermediate/day26) - List and Dictionary comprehension
-
-
-
-
-
-
+Day 26: [NATO Alphabet](/Days16-31:Intermediate/day26) - List and Dictionary comprehension\
+Day 27: [Miles to Km Converter](/Days16-31:Intermediate/day27) - GUIs with Tkinter
