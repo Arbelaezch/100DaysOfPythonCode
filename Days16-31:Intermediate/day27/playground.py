@@ -10,7 +10,7 @@ label = Label(text="This is old text")
 label.config(text="This is new text")
 label.pack()
 
-#Buttons
+#Button
 def action():
     print("Do something")
 
