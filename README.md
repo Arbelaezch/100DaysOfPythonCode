@@ -35,5 +35,7 @@ Day 26: [NATO Alphabet](/Days16-31:Intermediate/day26) - List and Dictionary com
 Day 27: [Miles to Km Converter](/Days16-31:Intermediate/day27) - GUIs with Tkinter\
 Day 28: [Pomodoro Timer](/Days16-31:Intermediate/day28) - Tkinter GUI\
 Day 29&30: [Password Manager](/Days16-31:Intermediate/day29) - JSON integration & Exception Handling\
-Day 31: [Flash Card App](/Days16-31:Intermediate/day31)
+Day 31: [Flash Card App](/Days16-31:Intermediate/day31)\
+Day 32: [Automated Birthday Wisher](/Days32-58:Intermediate+/day32)
+
 

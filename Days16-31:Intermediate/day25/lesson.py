@@ -18,7 +18,7 @@ with open("Days16-31:Intermediate/day25/weather_data.csv") as data_file:
 data = pandas.read_csv("Days16-31:Intermediate/day25/weather_data.csv")
 print(data)
 print(data["temp"]) # Get a specific column
-print(data.temp) # Also gets a specific colum by name
+print(data.temp) # Also gets a specific column by name
 
 data_dict = data.to_dict()	# Also a to_list() function
 
