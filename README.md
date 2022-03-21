@@ -38,5 +38,7 @@ Day 29&30: [Password Manager](/Days16-31:Intermediate/day29) - JSON integration 
 Day 31: [Flash Card App](/Days16-31:Intermediate/day31)\
 Day 32: [Automated Birthday Wisher](/Days32-58:Intermediate+/day32)\
 Day 33: [ISS Tracker](/Days32-58:Intermediate+/day33) - APIs\
-Day 34: [Trivia Quiz](/Days32-58:Intermediate+/day34) - Uses a trivia API with Tkinter GUI
+Day 34: [Trivia Quiz](/Days32-58:Intermediate+/day34) - Uses a trivia API with Tkinter GUI\
+Day 35: [Rain Alert App](/Days32-58:Intermediate+/day35) - API keys, Authentication, ENV Variables and Sending SMS.
+
 
