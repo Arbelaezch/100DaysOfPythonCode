@@ -41,5 +41,6 @@ Day 33: [ISS Tracker](/Days32-58:Intermediate+/day33) - APIs\
 Day 34: [Trivia Quiz](/Days32-58:Intermediate+/day34) - Uses a trivia API with Tkinter GUI\
 Day 35: [Rain Alert App](/Days32-58:Intermediate+/day35) - API keys, Authentication, ENV Variables and Sending SMS.\
 Day 36: [Stock Trading News Alerts](/Days32-58:Intermediate+/day36)
+Day 37: [Habit Tracker](/Days32-58:Intermediate+/day37)
 
 
