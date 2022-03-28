@@ -42,6 +42,5 @@ Day 34: [Trivia Quiz](/Days32-58:Intermediate+/day34) - Uses a trivia API with T
 Day 35: [Rain Alert App](/Days32-58:Intermediate+/day35) - API keys, Authentication, ENV Variables and Sending SMS.\
 Day 36: [Stock Trading News Alerts](/Days32-58:Intermediate+/day36)\
 Day 37: [Habit Tracker](/Days32-58:Intermediate+/day37)\
-Day 38: [Workout Tracker](/Days32-58:Intermediate+/day38) - API integration with Google Sheets
-
-
+Day 38: [Workout Tracker](/Days32-58:Intermediate+/day38) - API integration with Google Sheets\
+Day 39: [Flight Deal Finder](/Days32-58:Intermediate+/day38) - CAPSTONE PROJECT
