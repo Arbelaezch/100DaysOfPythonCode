@@ -4,31 +4,44 @@ from notification_manager import NotificationManager
 from flight_search import FlightSearch
 from flight_data import FlightData
 from pprint import pprint
-from datetime import datetime
+from datetime import datetime, timedelta
 
-#This file will need to use the DataManager,FlightSearch, FlightData, NotificationManager classes to achieve the program requirements.
-
+# Have users sign up through https://replit.com/@arbelaezch/FlightClub#main.py
 
 data_manager = DataManager()
-sheet_data = data_manager.get_cuttoff_price()
+sheet_data = data_manager.get_destination_data()
+flight_search = FlightSearch()
+notification_manager = NotificationManager()
 
-twilio = NotificationManager()
+ORIGIN_CITY_IATA = "YEG"
 
-# flight = FlightSearch()
+if sheet_data[0]["iataCode"] == "":
+    for row in sheet_data:
+        row["iataCode"] = flight_search.get_destination_code(row["city"])
+        data_manager.destination_data = sheet_data
+        data_manager.update_destination_code()
 
-# FlightSearch.get_iataCode(flight, sheet_data)
 
-# DataManager.update_iataCodes(data_manager, sheet_data)
-# pprint(sheet_data)
+tomorrow = datetime.now() + timedelta(days=1)
+six_months_from_today = datetime.now() + timedelta(days=(6 * 30))
 
 
-flight_data_manager = FlightData()
 for city in sheet_data:
-	flight = flight_data_manager.get_flight(city)
-	if flight["price"] <= city["lowestPrice"]:
-		from_date = flight["route"][0]["local_departure"].split("T")
-		to_date = flight["route"][1]["local_arrival"].split("T")
-		twilio.send_sms(flight["price"], city["city"], city["iataCode"], from_date[0], to_date[0])
+	flight = flight_search.get_flight(ORIGIN_CITY_IATA, city["iataCode"], from_time=tomorrow, to_time=six_months_from_today)
+
+	if flight is None:
+		continue
+ 
+	# Sends text message if price is lower than requirement.
+	if flight.price <= city["lowestPrice"]:
+		from_date = flight.out_date
+		to_date = flight.return_date
+		# notification_manager.send_sms(flight.price, city["city"], city["iataCode"], from_date, to_date, via_city=flight.via_city)
+		user_data = data_manager.get_user_data()
+		for user in user_data:
+			# link = f"https://www.google.com/flights?hl=en#flt={city['city']}.{city['iataCode']}.{flight.out_date}*{flight.destination_airport}.{flight.origin_airport}.{flight.return_date}"
+
+			notification_manager.send_emails(user["email"], flight.price, city["city"], city["iataCode"], from_date, to_date, via_city=flight.via_city)
 
 
 

@@ -43,4 +43,4 @@ Day 35: [Rain Alert App](/Days32-58:Intermediate+/day35) - API keys, Authenticat
 Day 36: [Stock Trading News Alerts](/Days32-58:Intermediate+/day36)\
 Day 37: [Habit Tracker](/Days32-58:Intermediate+/day37)\
 Day 38: [Workout Tracker](/Days32-58:Intermediate+/day38) - API integration with Google Sheets\
-Day 39: [Flight Deal Finder](/Days32-58:Intermediate+/day38) - CAPSTONE PROJECT
+Day 39&40: [Flight Deal Finder](/Days32-58:Intermediate+/day38) - CAPSTONE PROJECT
