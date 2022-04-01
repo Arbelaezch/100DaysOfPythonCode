@@ -1,3 +1,49 @@
 .checked {
 	color: orange;
   }
+
+h1, h3, th{
+	color: #222831;
+}
+
+body {
+	color: #393E46;
+	background-color: #EEEEEE;
+}
+
+header {
+	margin: auto;
+	width: 50%;
+}
+
+.content {
+	width: 50%;
+	margin: auto;
+}
+.technologies {
+	width: fit-content;
+	margin: auto;
+}
+.experience {
+	width: fit-content;
+	margin: auto;
+}
+.hobbies {
+	width: fit-content;
+	margin: auto;
+}
+
+a:visited {
+	color: rgb(0, 173, 181);
+}
+
+hr {
+	width: 10%;
+	border-style: none;
+	margin: auto;
+	border-top: dotted 4px rgb(0, 173, 181);
+	margin: 2rem auto 1rem auto;
+	
+
+
+}
