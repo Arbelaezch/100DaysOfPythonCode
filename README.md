@@ -44,4 +44,4 @@ Day 36: [Stock Trading News Alerts](/Days32-58:Intermediate+/day36)\
 Day 37: [Habit Tracker](/Days32-58:Intermediate+/day37)\
 Day 38: [Workout Tracker](/Days32-58:Intermediate+/day38) - API integration with Google Sheets\
 Day 39&40: [Flight Deal Finder](/Days32-58:Intermediate+/day39) - CAPSTONE PROJECT\
-Day 41-43: [Portfolio Website](/Days32-58%3AIntermediate%2B/day41) - HTML & CSS Foundations
+Day 41-44: [Portfolio Website](/Days32-58%3AIntermediate%2B/day41) - HTML & CSS Foundations

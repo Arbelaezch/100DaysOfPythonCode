@@ -1,40 +1,48 @@
-.checked {
-	color: orange;
-  }
-
-h1, h3, th{
-	color: #222831;
+a:visited {
+	color: rgb(0, 173, 181);
 }
 
 body {
 	color: #393E46;
 	background-color: #EEEEEE;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	
+}
+
+h1 {
+	color: #222831;
+	font-size: 562%;
+	font-family: 'Sacramento', cursive;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
 }
 
 header {
-	margin: auto;
-	width: 50%;
+	background-color: #E4F9F5;
+	position: relative;
+	padding-top: 10rem;
 }
 
-.content {
-	width: 50%;
-	margin: auto;
-}
-.technologies {
-	width: fit-content;
-	margin: auto;
-}
-.experience {
-	width: fit-content;
-	margin: auto;
-}
-.hobbies {
-	width: fit-content;
-	margin: auto;
+.middle-container {
+	
 }
 
-a:visited {
-	color: rgb(0, 173, 181);
+.profile {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.skill-row {
+	width: 80%;
+	margin: 0 auto 2rem auto;
+}
+
+.bottom-container {
+	
 }
 
 hr {
@@ -43,7 +51,40 @@ hr {
 	margin: auto;
 	border-top: dotted 4px rgb(0, 173, 181);
 	margin: 2rem auto 1rem auto;
+
+}
+
+span {
+	text-decoration: underline;
+}
+
+
+
+.title {
+
+}
+
+.top-cloud {
+	position: absolute;
+	top: 4rem;
+	right: 25rem;
+}
+
+.mountain {
 	
+}
 
+.bottom-cloud {
+	position: absolute;
+	left: 20rem;
+	bottom: 26rem;
+}
 
+.checked {
+	color: orange;
+}
+
+.content {
+	text-align: center;
+	
 }
