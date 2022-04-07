@@ -15,11 +15,8 @@ sp = spotipy.Spotify(auth_manager = SpotifyOAuth(client_id=spotify_ID, client_se
 
 user_id = sp.current_user()["id"]
 
-
-# year = input("Which year do you want to travel to? Type the date in this format: YYYY-MM-DD" )
-year = "2021-09-14"
-YYYY = "2021"
-
+# year = "2021-09-14"
+# YYYY = "2021"
 
 response = requests.get(f"https://www.billboard.com/charts/hot-100/{year}/")
 top100_web_page = response.text
@@ -30,7 +27,8 @@ all_songs = soup.select("div ul li ul li h3")
 songs_list = [" ".join(song.getText().split()) for song in all_songs]
 song_uris = []
 i = 0
-# YYYY = year.split("-")[0]
+year = input("Which year do you want to travel to? Type the date in this format: YYYY-MM-DD" )
+YYYY = year.split("-")[0]
 
 with open("Days32-58:Intermediate+/day46/songs.txt", "w") as file:
 	for song in songs_list:

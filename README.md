@@ -36,7 +36,7 @@ Day 27: [Miles to Km Converter](/Days16-31:Intermediate/day27) - GUIs with Tkint
 Day 28: [Pomodoro Timer](/Days16-31:Intermediate/day28) - Tkinter GUI\
 Day 29&30: [Password Manager](/Days16-31:Intermediate/day29) - JSON integration & Exception Handling\
 Day 31: [Flash Card App](/Days16-31:Intermediate/day31)\
-Day 32: [Automated Birthday Wisher](/Days32-58:Intermediate+/day32)\
+Day 32: [Automated Birthday Wisher](/Days32-58:Intermediate+/day32) - SMTP\
 Day 33: [ISS Tracker](/Days32-58:Intermediate+/day33) - APIs\
 Day 34: [Trivia Quiz](/Days32-58:Intermediate+/day34) - Uses a trivia API with Tkinter GUI\
 Day 35: [Rain Alert App](/Days32-58:Intermediate+/day35) - API keys, Authentication, ENV Variables and Sending SMS.\
@@ -45,4 +45,8 @@ Day 37: [Habit Tracker](/Days32-58:Intermediate+/day37)\
 Day 38: [Workout Tracker](/Days32-58:Intermediate+/day38) - API integration with Google Sheets\
 Day 39&40: [Flight Deal Finder](/Days32-58:Intermediate+/day39) - CAPSTONE PROJECT\
 Day 41-44: [Portfolio Website](/Days32-58%3AIntermediate%2B/day41) - HTML & CSS Foundations\
-Day 45: [Film Web Scraper](/Days32-58%3AIntermediate%2B/day45) - Beautiful Soup
+Day 45: [Film Web Scraper](/Days32-58%3AIntermediate%2B/day45) - Beautiful Soup\
+Day 46: [Spotify Playlist Creator](/Days32-58%3AIntermediate%2B/day46)\
+Day 47: [Amazon Price Tracked](/Days32-58%3AIntermediate%2B/day47)
+
+
