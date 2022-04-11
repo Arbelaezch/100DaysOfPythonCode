@@ -47,6 +47,9 @@ Day 39&40: [Flight Deal Finder](/Days32-58:Intermediate+/day39) - CAPSTONE PROJE
 Day 41-44: [Portfolio Website](/Days32-58%3AIntermediate%2B/day41) - HTML & CSS Foundations\
 Day 45: [Film Web Scraper](/Days32-58%3AIntermediate%2B/day45) - Beautiful Soup\
 Day 46: [Spotify Playlist Creator](/Days32-58%3AIntermediate%2B/day46)\
-Day 47: [Amazon Price Tracked](/Days32-58%3AIntermediate%2B/day47)
+Day 47: [Amazon Price Tracker](/Days32-58%3AIntermediate%2B/day47)\
+Day 48: [Game Playing Bot](/Days32-58:Intermediate+/day48) - Selenium Webdriver
+
+
 
 
