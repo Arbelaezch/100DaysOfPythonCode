@@ -13,7 +13,6 @@ xpath = '//*[@id="bigCookie"]'
 
 driver.get(url=url)
 
-cookie = driver.find_element(by=By.XPATH, value=xpath)
 
 timeout = time.time() + 5
 five_min = time.time() + 60*5
@@ -21,7 +20,11 @@ five_min = time.time() + 60*5
 
 num = -1
 while 1:
-	cookie.click()
+	try:
+		cookie = driver.find_element(by=By.XPATH, value=xpath)
+		cookie.click()
+	except:
+		pass
  
 	# if time.time() > timeout:
 	# 	try:
