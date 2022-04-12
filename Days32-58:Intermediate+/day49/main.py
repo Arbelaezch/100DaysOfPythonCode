@@ -44,17 +44,42 @@ wait = WebDriverWait(driver, 10)
 
 
 
+
+
+# jobs_list = driver.find_elements(By.CLASS_NAME, value='jobs-search-results__list-item occludable-update p0 relative ember-view')
+# jobs_list = driver.find_elements(By.CSS_SELECTOR, ".job-card-container--clickable")
+
+
+
 my_element_id = 'jobs-apply-button'
 ignored_exceptions=(NoSuchElementException,StaleElementReferenceException,)
 your_element = WebDriverWait(driver, 10,ignored_exceptions=ignored_exceptions)\
-                        .until(EC.presence_of_element_located((By.CLASS_NAME, my_element_id)))
+						.until(EC.presence_of_element_located((By.CLASS_NAME, my_element_id)))
 your_element.click()
 
-# checkbox = driver.find_element(by=By.ID, value="follow-company-checkbox")
-# checkbox.click()
 button = driver.find_element(by=By.CSS_SELECTOR, value="footer button")
 button.click()
 time.sleep(3)
+
+
+# for job in jobs_list:
+# 	try:
+# 		job.click()
+
+# 		my_element_id = 'jobs-apply-button'
+# 		ignored_exceptions=(NoSuchElementException,StaleElementReferenceException,)
+# 		your_element = WebDriverWait(driver, 10,ignored_exceptions=ignored_exceptions)\
+# 								.until(EC.presence_of_element_located((By.CLASS_NAME, my_element_id)))
+# 		your_element.click()
+# 		button = driver.find_element(by=By.CSS_SELECTOR, value="footer button")
+# 		button.click()
+# 		time.sleep(3)
+# 	except:
+# 		print("failed")
+    
+
+
+
 
 
 
