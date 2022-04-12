@@ -14,7 +14,7 @@ url = "https://www.linkedin.com/jobs/search/?f_AL=true&f_E=2&f_WT=2&keywords=pyt
 chrome_driver_path = "/Users/arbelaezch/code/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
-LINKEDIN_PASSWORD = "Sherlocked#1"
+LINKEDIN_PASSWORD = "password"
 
 driver.get(url=url)
 
