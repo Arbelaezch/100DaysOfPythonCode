@@ -14,16 +14,7 @@ url = "http://secure-retreat-92358.herokuapp.com/"
 
 bot = InternetSpeedTwitterBot(CHROME_DRIVER_PATH)
 
-speed = bot.get_internet_speed()
-# bot.tweet_at_provider()
+bot.get_internet_speed()
+bot.tweet_at_provider(TWITTER_EMAIL, TWITTER_PASSWORD, PROMISED_DOWN, PROMISED_UP)
 
-
-# data = driver.find_element(by=By.NAME, value='fName')
-# data.send_keys("Carb")
-
-
-
-# print(data.text)
-
-# driver.quit()
 
