@@ -51,11 +51,5 @@ Day 47: [Amazon Price Tracker](/Days32-58%3AIntermediate%2B/day47)\
 Day 48: [Cookie Clicker Bot](/Days32-58:Intermediate+/day48) - Selenium Webdriver\
 Day 49: [Automated Job Applications](/Days32-58:Intermediate+/day49)\
 Day 51: [Internet Speed Twitter Bot](/Days32-58:Intermediate+/day51)\
-Day 53: [Data Entry Job Automation](/Days32-58:Intermediate+/day52) - YEG renting prices finder
-
-
-
-
-
-
-
+Day 53: [Data Entry Job Automation](/Days32-58:Intermediate+/day53) - YEG renting prices finder\
+Day 54: [Web Dev with Flask](/Days32-58:Intermediate+/day54) - Foundations of web dev with Flask
