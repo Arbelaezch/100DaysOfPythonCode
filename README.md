@@ -55,7 +55,9 @@ Day 53: [Data Entry Job Automation](/Days32-58:Intermediate+/day53) - YEG rentin
 Day 54: [Web Dev with Flask](/Days32-58:Intermediate+/day54) - Decorator functions\
 Day 55: [Guess the Number Game with Flask](/Days32-58:Intermediate+/day55)\
 Day 56: [Rendering HTML/CSS with Flask](/Days32-58:Intermediate+/day56)\
-Day 57: [Rendering Dynamic Webpages with Flask](/Days32-58:Intermediate+/day57)
+Day 57: [Rendering Dynamic Webpages with Flask](/Days32-58:Intermediate+/day57-2)\
+Day 58: [Bootstrap Website](/Days32-58:Intermediate+/day58)
+
 
 
 
