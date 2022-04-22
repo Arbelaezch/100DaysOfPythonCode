@@ -59,11 +59,4 @@ Day 57: [Rendering Dynamic Webpages with Flask](/Days32-58:Intermediate+/day57-2
 Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)\
 Day 59: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using Flask\
 Day 60: [Advanced Contact Forms](/Days59-80:Advanced/day60) - WTForms, Flask, and Bootstrap all used\
-Day 61: [](/Days59-80:Advanced/day61)
-
-
-
-
-
-
-
+Day 61: [Cafe Bootstrap+Flask Website](/Days59-80:Advanced/day61) - CSV integration, WTForms, Flask, and Bootstrap all used
