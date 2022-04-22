@@ -56,8 +56,10 @@ Day 54: [Web Dev with Flask](/Days32-58:Intermediate+/day54) - Decorator functio
 Day 55: [Guess the Number Game with Flask](/Days32-58:Intermediate+/day55)\
 Day 56: [Rendering HTML/CSS with Flask](/Days32-58:Intermediate+/day56)\
 Day 57: [Rendering Dynamic Webpages with Flask](/Days32-58:Intermediate+/day57-2)\
-Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)
-Day 59: [Bootstrap Website](/Days32-58:Intermediate+/blog)
+Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)\
+Day 59: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using Flask\
+Day 60: [Contact Forms](/Days59-80:Advanced/day60)
+
 
 
 
