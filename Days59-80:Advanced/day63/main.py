@@ -1,3 +1,8 @@
+# A Flask web app integrating SQLAlchemy that allows you to add your favorite
+# films and display them. Allows you to change ratings, reviews, and update the
+# list order.
+
+
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
@@ -6,6 +11,8 @@ from wtforms import StringField, SubmitField, Form
 from wtforms.validators import DataRequired
 import requests
 import json
+from sqlalchemy import desc, asc
+import sqlalchemy
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
@@ -50,7 +57,12 @@ MOVIE_ENDPOINT = "https://api.themoviedb.org/3/search/movie"
 
 @app.route("/")
 def home():
-    movie_list = Movie.query.all()
+    rank = 1
+    movie_list = Movie.query.order_by(desc(Movie.rating)).all()
+    for movie in movie_list:
+        movie.ranking = rank
+        rank += 1
+    
     return render_template("index.html", all_movies=movie_list)
 
 
