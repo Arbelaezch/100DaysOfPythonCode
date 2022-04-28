@@ -56,10 +56,12 @@ Day 54: [Web Dev with Flask](/Days32-58:Intermediate+/day54) - Decorator functio
 Day 55: [Guess the Number Game with Flask](/Days32-58:Intermediate+/day55)\
 Day 56: [Rendering HTML/CSS with Flask](/Days32-58:Intermediate+/day56)\
 Day 57: [Rendering Dynamic Webpages with Flask](/Days32-58:Intermediate+/day57-2)\
-Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)\
-Day 59: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using Flask\
-Day 60: [Advanced Contact Forms](/Days59-80:Advanced/day60) - WTForms, Flask, and Bootstrap all used\
-Day 61: [Cafe Bootstrap+Flask Website](/Days59-80:Advanced/day61) - CSV integration, WTForms, Flask, and Bootstrap all used\
-Day 62: [Virtual Bookshelf](/Days59-80:Advanced/day62) - SQLite and Flask\
-Day 63: [Top 10 Movie Website](/Days59-80:Advanced/day63)
+Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)
 
+### Advanced Projects
+Day 60: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using Flask\
+Day 61: [Advanced Contact Forms](/Days59-80:Advanced/day60) - WTForms, Flask, and Bootstrap all used\
+Day 62: [Cafe Bootstrap+Flask Website](/Days59-80:Advanced/day61) - CSV integration, WTForms, Flask, and Bootstrap all used\
+Day 63: [Virtual Bookshelf](/Days59-80:Advanced/day62) - SQLite and Flask\
+Day 64: [Top 10 Movie Website](/Days59-80:Advanced/day63)
+Day 66: [Building RESTful APIs](/Days59-80:Advanced/day66)
