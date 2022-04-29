@@ -63,5 +63,5 @@ Day 60: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using 
 Day 61: [Advanced Contact Forms](/Days59-80:Advanced/day60) - WTForms, Flask, and Bootstrap all used\
 Day 62: [Cafe Bootstrap+Flask Website](/Days59-80:Advanced/day61) - CSV integration, WTForms, Flask, and Bootstrap all used\
 Day 63: [Virtual Bookshelf](/Days59-80:Advanced/day62) - SQLite and Flask\
-Day 64: [Top 10 Movie Website](/Days59-80:Advanced/day63)
-Day 66: [Building RESTful APIs](/Days59-80:Advanced/day66)
+Day 64: [Top 10 Movie Website](/Days59-80:Advanced/day63)\
+Day 66: [Building RESTful APIs](/Days59-80:Advanced/day66) - GET, POST, PATCH, DELETE to an SQL db.
