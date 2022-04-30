@@ -1,3 +1,6 @@
+from crypt import methods
+from datetime import date
+from distutils.debug import DEBUG
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
@@ -21,6 +24,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+
 ##CONFIGURE TABLE
 class BlogPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -38,20 +42,22 @@ class CreatePostForm(FlaskForm):
     subtitle = StringField("Subtitle", validators=[DataRequired()])
     author = StringField("Your Name", validators=[DataRequired()])
     img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
-    body = StringField("Blog Content", validators=[DataRequired()])
+    body = CKEditorField("Blog Content", validators=[DataRequired()])
     submit = SubmitField("Submit Post")
 
 
 @app.route('/')
 def get_all_posts():
+    posts = BlogPost.query.all()
     return render_template("index.html", all_posts=posts)
 
 
 @app.route("/post/<int:index>")
 def show_post(index):
+    posts = BlogPost.query.all()
     requested_post = None
     for blog_post in posts:
-        if blog_post["id"] == index:
+        if blog_post.id == index:
             requested_post = blog_post
     return render_template("post.html", post=requested_post)
 
@@ -60,10 +66,51 @@ def show_post(index):
 def about():
     return render_template("about.html")
 
+@app.route("/edit-post/<int:post_id>", methods=['GET', 'POST'])
+def edit_post(post_id):
+	posts = BlogPost.query.all()
+	requested_post = None
+	for blog_post in posts:
+		if blog_post.id == post_id:
+			post = blog_post
+	form = CreatePostForm(title=post.title, subtitle=post.subtitle, img_url=post.img_url, author=post.author, body=post.body)
+	if form.validate_on_submit():
+		post.title=form.title.data
+		post.subtitle=form.subtitle.data
+		post.author=form.author.data
+		post.img_url=form.img_url.data
+		post.body=form.body.data
+  
+		db.session.commit()
+		return redirect('/')
+    
+	return render_template("make-post.html", form=form, post=post)
+
+@app.route("/new-post", methods=['GET', 'POST'])
+def new_post():
+	form = CreatePostForm()
+	if form.validate_on_submit():
+		current_date = date.today()
+		current_date = current_date.strftime("%B %d, %Y")
+		
+		new_post = BlogPost(title=form.title.data, subtitle=form.subtitle.data, author=form.author.data, img_url=form.img_url.data, body=form.body.data, date=current_date)
+  
+		db.session.add(new_post)
+		db.session.commit()
+		return redirect('/')
+	return render_template("make-post.html", form=form)
+
+@app.route("/delete/<post_id>")
+def delete_post(post_id):
+	post = BlogPost.query.get(post_id)
+	db.session.delete(post)
+	db.session.commit()
+    
+	return redirect('/')
 
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
