@@ -1,10 +1,12 @@
 # 100DaysOfPythonCode
+
 Completed projects from the Udemy course [100 Days of Code: The Complete Python Pro Bootcamp for 2022](https://www.udemy.com/course/100-days-of-code/).\
 There are multiple other slightly smaller projects each day that are not included in this repo. These other projects include things like a BMI calculator and glorious old FizzBuzz.
 
 ## Projects Completed So Far
 
 ### Beginner Projects
+
 Day 1: [Band Name Generator](/Days1-15:Beginner/day1.py)\
 Day 2: [Group Tip Calculator](/Days1-15:Beginner/day2.py)\
 Day 3: [Choose Your Own Adventure Game](/Days1-15:Beginner/day3.py)\
@@ -22,6 +24,7 @@ Day 14: [Higher Lower Game (Guess Which celebrity has more Instagram followers)]
 Day 15: [Virtual Coffee Machine](/Days1-15:Beginner/day15/day15.py)
 
 ### Intermediate Projects
+
 Day 16: [OOP Coffee Machine](/Days16-31:Intermediate/day16/main.py)\
 Day 17: [OOP Quiz](/Days16-31:Intermediate/day17/main.py)\
 Day 18: [Turtle Graphical User Interface Hirst Painting](/Days16-31:Intermediate/day18/main.py)\
@@ -59,6 +62,7 @@ Day 57: [Rendering Dynamic Webpages with Flask](/Days32-58:Intermediate+/day57-2
 Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)
 
 ### Advanced Projects
+
 Day 60: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using Flask\
 Day 61: [Advanced Contact Forms](/Days59-80:Advanced/day60) - WTForms, Flask, and Bootstrap all used\
 Day 62: [Cafe Bootstrap+Flask Website](/Days59-80:Advanced/day61) - CSV integration, WTForms, Flask, and Bootstrap all used\
