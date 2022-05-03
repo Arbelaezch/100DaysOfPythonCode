@@ -25,33 +25,6 @@ class User(UserMixin, db.Model):
 #Line below only required once, when creating DB. 
 # db.create_all()
 
-
-
-
-@app.route('/')
-def home():
-	return render_template("index.html")
-
-
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        # Werkzeug helper function for hashing + salting password
-        password = generate_password_hash(request.form['password'], method='pbkdf2:sha256', salt_length=8)
-        
-        user = User(name=request.form['name'], email=request.form['email'], password=password)
-        db.session.add(user)
-        db.session.commit()
-        login_user(user)
-        
-        return redirect(url_for('secrets', user=user.name))
-    
-    return render_template("register.html")
-
-
-
-
-
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -59,34 +32,58 @@ def load_user(user_id):
 
 
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    # form = LoginForm()
-	if request.method == 'POST':
-		password = request.form.get('password')
-		user = User.query.filter_by(email=request.form['email']).first()
-  
-  
-		print(user.email)
-		print(check_password_hash(str(user.password), str(password)))
-		print(password)
-		print(user.password)
+@app.route('/')
+def home():
+    if current_user.is_authenticated:
+         return render_template("index.html", logged_in=True)
+    else:
+         return render_template("index.html")
 
-		if check_password_hash(user.password, password):
-			print('second')
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+	error = None
+	if request.method == 'POST':
+		user = User.query.filter_by(email=request.form['email']).first()
+		if user:
+			error = 'Email already exists.'
+			return render_template('register.html', error=error)
+		else:
+			# Werkzeug helper function for hashing + salting password
+			password = generate_password_hash(request.form['password'], method='pbkdf2:sha256', salt_length=8)
+			
+			user = User(name=request.form['name'], email=request.form['email'], password=password)
+			db.session.add(user)
+			db.session.commit()
 			login_user(user)
 
-			flash('Logged in successfully.')
-
-			# next = request.args.get('next')
-			# is_safe_url should check if the url is safe for redirects.
-			# See http://flask.pocoo.org/snippets/62/ for an example.
-
 			return redirect(url_for('secrets', user=user.name))
+    
+	return render_template("register.html")
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+	error = None
+ 
+	if request.method == 'POST':
+		password = request.form.get('password')
+		try:
+			user = User.query.filter_by(email=request.form['email']).first()
+			if check_password_hash(user.password, password):
+				login_user(user)
+				flash('Logged in successfully.')
+
+				return redirect(url_for('secrets', user=user.name))
+			else:
+				# Flask Flash messages
+				error = 'Invalid credentials'
+				return render_template('login.html', error=error)
+		except:
+				error = 'Email does not exist.'
+				return render_template('login.html', error=error)
+            
 	return render_template('login.html')
-
-
-
 
 @app.route('/secrets')
 @login_required
@@ -96,7 +93,6 @@ def secrets():
 
 
 @app.route('/logout')
-@login_required
 def logout():
     logout_user()
     return redirect(url_for('home'))
@@ -105,6 +101,10 @@ def logout():
 @app.route('/download')
 def download():
     return send_from_directory('static', "files/cheat_sheet.pdf")
+
+
+
+
 
 
 if __name__ == "__main__":
