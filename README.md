@@ -63,11 +63,13 @@ Day 58: [Bootstrap Website](/Days32-58:Intermediate+/tindog)
 
 ### Advanced Projects
 
-Day 60: [Bootstrap Website with contact form](/Days59-80:Advanced/blog) - Using Flask\
+Day 60: [Blog Part II](/Days59-80:Advanced/blog) - Flask-Bootstrap website with contact form\
 Day 61: [Advanced Contact Forms](/Days59-80:Advanced/day60) - WTForms, Flask, and Bootstrap all used\
 Day 62: [Cafe Bootstrap+Flask Website](/Days59-80:Advanced/day61) - CSV integration, WTForms, Flask, and Bootstrap all used\
 Day 63: [Virtual Bookshelf](/Days59-80:Advanced/day62) - SQLite and Flask\
 Day 64: [Top 10 Movie Website](/Days59-80:Advanced/day63)\
 Day 66: [Building RESTful APIs](/Days59-80:Advanced/day66) - GET, POST, PATCH, DELETE to an SQL db.\
-Day 67: [Blog Part III](/Days59-80:Advanced/day67) - Flask, Bootstrap, SQLAlchemy, WTForms\
-Day 68: [Authentication](/Days59-80:Advanced/day68)
+Day 67: [Blog Part III](/Days59-80:Advanced/blog) - Flask, Bootstrap, SQLAlchemy, WTForms\
+Day 68: [Authentication](/Days59-80:Advanced/day68)\
+Day 69: [](/Days59-80:Advanced/day69)
+
