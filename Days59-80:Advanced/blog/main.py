@@ -1,9 +1,10 @@
 from crypt import methods
 from datetime import date
 from distutils.debug import DEBUG
+import requests
 import email
 from email.message import EmailMessage
-from flask import Flask, render_template, redirect, url_for, abort
+from flask import Flask, flash, render_template, redirect, request, url_for, abort
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
@@ -72,9 +73,6 @@ class BlogPost(db.Model):
     comments = relationship("Comment", back_populates="parent_post")
     
     
-    
-    
-    
 class Comment(db.Model, UserMixin):
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
@@ -110,7 +108,7 @@ class LoginForm(FlaskForm):
     submit = SubmitField("Submit Post")
     
 class CommentForm(FlaskForm):
-    body = CKEditorField("Comment", validators=[DataRequired()])
+    comment_text = CKEditorField("Comment", validators=[DataRequired()])
     submit = SubmitField("Submit Post")
 
 
@@ -170,15 +168,32 @@ def get_all_posts():
     return render_template("index.html", all_posts=posts)
 
 
-@app.route("/post/<int:index>")
+@app.route("/post/<int:index>", methods=['GET', 'POST'])
 def show_post(index):
-    posts = BlogPost.query.all()
-    form = CommentForm()
-    requested_post = None
-    for blog_post in posts:
-        if blog_post.id == index:
-            requested_post = blog_post
-    return render_template("post.html", post=requested_post, form=form)
+	posts = BlogPost.query.all()
+	form = CommentForm()
+	requested_post = None
+	for blog_post in posts:
+		if blog_post.id == index:
+			requested_post = blog_post
+			comments = blog_post.comments
+	if form.validate_on_submit():
+		if not current_user.is_authenticated:
+			flash("You need to login or register to comment.")
+			return redirect(url_for("login"))
+
+		new_comment = Comment(
+            text=form.comment_text.data,
+            comment_author=current_user,
+            parent_post=requested_post
+        )
+
+		db.session.add(new_comment)
+		db.session.commit()
+		form.comment_text.data = ''
+	
+            
+	return render_template("post.html", post=requested_post, form=form, comments=comments)
 
 
 
