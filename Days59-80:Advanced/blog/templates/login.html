@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block content %}
+{% include "header.html" %}
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/edit-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Login</h1>
+            <span class="subheading">Welcome back 😊</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<body>
+	
+
+
+	
+</body>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        	<body>
+				{% if error %}
+					<p class=error style="color: red;"><strong>Error:</strong> {{ error }}
+  				{% endif %}
+				{{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+			</body>
+      </div>
+    </div>
+  </div>
+{% include "footer.html" %}
+{% endblock %}
