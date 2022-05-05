@@ -71,5 +71,5 @@ Day 64: [Top 10 Movie Website](/Days59-80:Advanced/day63)\
 Day 66: [Building RESTful APIs](/Days59-80:Advanced/day66) - GET, POST, PATCH, DELETE to an SQL db.\
 Day 67: [Blog Part III](/Days59-80:Advanced/blog) - Flask, Bootstrap, SQLAlchemy, WTForms\
 Day 68: [Authentication](/Days59-80:Advanced/day68)\
-Day 69: [Blog Part IV](/Days59-80:Advanced/blog)\
+Day 69: [Blog Part IV](/Days59-80:Advanced/blog) - Users can register/login and comment on blog posts\
 Day 70: Heroku Hosting Practice
