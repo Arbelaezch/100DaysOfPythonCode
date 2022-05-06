@@ -72,4 +72,5 @@ Day 66: [Building RESTful APIs](/Days59-80:Advanced/day66) - GET, POST, PATCH, D
 Day 67: [Blog Part III](/Days59-80:Advanced/blog) - Flask, Bootstrap, SQLAlchemy, WTForms\
 Day 68: [Authentication](/Days59-80:Advanced/day68)\
 Day 69: [Blog Part IV](/Days59-80:Advanced/blog) - Users can register/login and comment on blog posts\
-Day 70: Heroku Hosting Practice
+Day 70: Heroku Hosting Practice\
+Day 71: [College Major Salaries](/Days59-80:Advanced/71) - Pandas Data Exploration
