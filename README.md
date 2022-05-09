@@ -73,4 +73,5 @@ Day 67: [Blog Part III](/Days59-80:Advanced/blog) - Flask, Bootstrap, SQLAlchemy
 Day 68: [Authentication](/Days59-80:Advanced/day68)\
 Day 69: [Blog Part IV](/Days59-80:Advanced/blog) - Users can register/login and comment on blog posts\
 Day 70: Heroku Hosting Practice\
-Day 71: [College Major Salaries](/Days59-80:Advanced/day71) - Pandas Data Exploration
+Day 71: [College Major Salaries](/Days59-80:Advanced/day71) - Pandas Data Exploration\
+Day 72: [Data Visualization with Matplotlib](/Days59-80:Advanced/day72)
