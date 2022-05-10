@@ -75,4 +75,4 @@ Day 69: [Blog Part IV](/Days59-80:Advanced/blog) - Users can register/login and 
 Day 70: Heroku Hosting Practice\
 Day 71: [College Major Salaries](/Days59-80:Advanced/day71) - Pandas Data Exploration\
 Day 72: [Data Visualization with Matplotlib](/Days59-80:Advanced/day72)\
-Day 73: [Aggregate & Merge Data with Pandas](/Days59-80:Advanced/day72)
+Day 73: [Aggregate & Merge Data with Pandas](/Days59-80:Advanced/day73)
